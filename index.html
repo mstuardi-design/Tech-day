@@ -1,32 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="“Lo que se escucha” es una página web dedicada a la música y las tendencias musicales más populares. El sitio presenta dos listas principales: una con las canciones más escuchadas de toda la historia y otra con los temas más reproducidos durante el último mes. Su diseño moderno y dinámico permite a los usuarios descubrir éxitos musicales, comparar tendencias y explorar los temas que marcaron diferentes épocas. Es una plataforma ideal para amantes de la música que quieren mantenerse al día con los hits actuales y recordar las canciones más icónicas de todos los tiempos.">
-    <meta name="Author" content="Mateo Stuardi">
-    <meta name="keywords" content="música, canciones, hits, tendencias musicales, top canciones, canciones populares, streaming musical, éxitos musicales, ranking musical, música del mes, canciones históricas, artistas populares, playlists, novedades musicales, lo más escuchado">
+    <title>Lo que se escucha | G&eacute;neros musicales</title>
+    <meta name="description" content="Lo que se escucha es una p&aacute;gina web dedicada a la m&uacute;sica y las tendencias musicales m&aacute;s populares. Explora rankings de rock internacional y tech house.">
+    <meta name="author" content="Mateo Stuardi">
+    <meta name="keywords" content="m&uacute;sica, canciones, hits, tendencias musicales, top canciones, canciones populares, streaming musical, &eacute;xitos musicales, ranking musical, rock internacional, tech house">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-     <h1>
-          Generos
-    </h1>
-    </header>
-    <hr>
-    <main>
-        <section>
-      <a href="Rock Internacional.html">
-    <button>Rock Internacional</button>
-</a>
-
-<a href="techhouse.html">
-    <button>Tech House</button>
-</a>
-<a href=".html">
-    <button>Tech House</button>
-</a>
-
+    <header class="site-header">
+        <nav class="nav-bar" aria-label="Navegaci&oacute;n principal">
+            <a class="brand" href="index.html">Lo que se escucha</a>
+            <div class="nav-links">
+                <a class="active" href="index.html">Inicio</a>
+                <a href="Rock Internacional.html">Rock Internacional</a>
+                <a href="techhouse.html">Tech House</a>
+            </div>
+        </nav>
+        <section class="hero">
+            <p class="eyebrow">Rankings musicales</p>
+            <h1>Explor&aacute; los sonidos que dominan las playlists</h1>
+            <p>Un recorrido visual por g&eacute;neros, artistas y canciones que siguen marcando ritmo en todo el mundo.</p>
         </section>
-       
+    </header>
+
+    <main>
+        <section class="section-intro">
+            <p class="eyebrow">Eleg&iacute; un g&eacute;nero</p>
+            <h2>Dos escenas, una misma energ&iacute;a</h2>
+        </section>
+
+        <section class="genre-grid" aria-label="G&eacute;neros disponibles">
+            <a class="genre-card rock-card" href="Rock Internacional.html">
+                <span>Guitarras legendarias</span>
+                <h3>Rock Internacional</h3>
+                <p>Cl&aacute;sicos enormes, himnos de estadio y canciones que atraviesan generaciones.</p>
+            </a>
+            <a class="genre-card house-card" href="techhouse.html">
+                <span>Groove de club</span>
+                <h3>Tech House</h3>
+                <p>Bases potentes, drops pegadizos y tracks pensados para no quedarse quieto.</p>
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Lo que se escucha</p>
+        <span>Ranking, historia y tendencia musical en un solo lugar.</span>
+    </footer>
+</body>
+</html>
